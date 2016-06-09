@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- URL::forceSchema('https') -->
-{{ URL::forceSchema('https') }}
+{{ URL::forceSchema('http') }}
 
 <html lang="es">
     <head>
