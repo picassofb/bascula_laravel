@@ -15,7 +15,7 @@
         <li class="nav-item start active open">
             <a href="javascript:;" class="nav-link nav-toggle">
                 <i class="icon-home"></i>
-                <span class="title">Dashboard</span>
+                <span class="title">Panel</span>
                 <span class="selected"></span>
                 <span class="arrow open"></span>
             </a>

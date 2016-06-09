@@ -1,6 +1,7 @@
 @extends('layouts.master')
 
 @section('contenido')
+<p>
 
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
 sed diam nonummy nibh euismod tincidunt ut laoreet dolore
@@ -22,5 +23,9 @@ quam nunc putamus parum claram, anteposuerit litterarum formas
 humanitatis per seacula quarta decima et quinta decima. Eodem
 modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
 in futurum.
+</p>
+@endsection
 
+@section('titulo')
+    Inicio
 @endsection
