@@ -30,19 +30,18 @@
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
                 <div class="page-content">
-                    
-                    <h3 class="page-title"> Dashboard
-                        <small>dashboard & statistics</small>
+                    <h3 class="page-title"> Panel
+                        <small>panel & estadisticas</small>
                     </h3>
                     <div class="page-bar">
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="icon-home"></i>
-                                <a href="index.html">Home</a>
+                                <a href="{{ URL::to('/') }}">Inicio</a>
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <span>Dashboard</span>
+                                <span>Panel</span>
                             </li>
                         </ul>
                     </div>

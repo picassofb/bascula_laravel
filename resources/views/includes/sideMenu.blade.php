@@ -19,65 +19,181 @@
                 <span class="selected"></span>
                 <span class="arrow open"></span>
             </a>
-            <ul class="sub-menu">
-                <li class="nav-item start active open">
-                    <a href="index.html" class="nav-link ">
-                        <i class="icon-bar-chart"></i>
-                        <span class="title">Dashboard 1</span>
-                        <span class="selected"></span>
-                    </a>
-                </li>
-                <li class="nav-item start ">
-                    <a href="dashboard_2.html" class="nav-link ">
-                        <i class="icon-bulb"></i>
-                        <span class="title">Dashboard 2</span>
-                        <span class="badge badge-success">1</span>
-                    </a>
-                </li>
-                <li class="nav-item start ">
-                    <a href="dashboard_3.html" class="nav-link ">
-                        <i class="icon-graph"></i>
-                        <span class="title">Dashboard 3</span>
-                        <span class="badge badge-danger">5</span>
-                    </a>
-                </li>
-            </ul>
         </li>
-        
+        <!-- INGRESOS -->
         <li class="nav-item  ">
             <a href="javascript:;" class="nav-link nav-toggle">
-                <i class="icon-diamond"></i>
-                <span class="title">UI Features</span>
+                <i class="icon-action-redo"></i>
+                <span class="title">Ingreso</span>
                 <span class="arrow"></span>
             </a>
             <ul class="sub-menu">
                 <li class="nav-item  ">
                     <a href="ui_colors.html" class="nav-link ">
-                        <span class="title">Color Library</span>
+                        <span class="title">Peso Bruto</span>
                     </a>
                 </li>
                 <li class="nav-item  ">
                     <a href="ui_general.html" class="nav-link ">
-                        <span class="title">General Components</span>
+                        <span class="title">Peso Tara</span>
                     </a>
                 </li>
                 
                 <li class="nav-item  ">
                     <a href="javascript:;" class="nav-link nav-toggle">
-                        <span class="title">Page Progress Bar</span>
+                        <span class="title">Reportes</span>
                         <span class="arrow"></span>
+                        <i class="icon-arrow-right"></i>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item ">
-                            <a href="ui_page_progress_style_1.html" class="nav-link "> Flash </a>
+                            <a href="ui_page_progress_style_1.html" class="nav-link "> Por Proveedor </a>
                         </li>
                         <li class="nav-item ">
-                            <a href="ui_page_progress_style_2.html" class="nav-link "> Big Counter </a>
+                            <a href="ui_page_progress_style_2.html" class="nav-link "> Por Artículo </a>
                         </li>
                     </ul>
                 </li>
             </ul>
         </li>
+
+
+        <!-- PROVEEDORES -->
+        <li class="nav-item  ">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-users"></i>
+                <span class="title">Proveedores</span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item  ">
+                    <a href="ui_colors.html" class="nav-link ">
+                        <span class="title">Gestionar</span>
+                    </a>
+                </li>
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <span class="title">Reportes</span>
+                        <span class="arrow"></span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_1.html" class="nav-link "> Individual </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_2.html" class="nav-link "> General </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- TRANSPORTISTAS -->
+        <li class="nav-item  ">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-basket-loaded"></i>
+                <span class="title">Transportistas</span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item  ">
+                    <a href="ui_colors.html" class="nav-link ">
+                        <span class="title">Gestionar</span>
+                    </a>
+                </li>
+
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <span class="title">Reportes</span>
+                        <span class="arrow"></span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_1.html" class="nav-link "> Individual </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_2.html" class="nav-link "> General </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- ARTICULOS -->
+        <li class="nav-item  ">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-layers"></i>
+                <span class="title">Articulos</span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item  ">
+                    <a href="ui_colors.html" class="nav-link ">
+                        <span class="title">Gestionar</span>
+                    </a>
+                </li>
+
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <span class="title">Reportes</span>
+                        <span class="arrow"></span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_1.html" class="nav-link "> Individual </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_2.html" class="nav-link "> General </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- BODEGA -->
+        <li class="nav-item  ">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-social-dropbox"></i>
+                <span class="title">Bodegas</span>
+                <span class="arrow"></span>
+            </a>
+            <ul class="sub-menu">
+                <li class="nav-item  ">
+                    <a href="ui_colors.html" class="nav-link ">
+                        <span class="title">Gestionar</span>
+                    </a>
+                </li>
+
+                <li class="nav-item  ">
+                    <a href="javascript:;" class="nav-link nav-toggle">
+                        <span class="title">Reportes</span>
+                        <span class="arrow"></span>
+                        <i class="icon-arrow-right"></i>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_1.html" class="nav-link "> Individual </a>
+                        </li>
+                        <li class="nav-item ">
+                            <a href="ui_page_progress_style_2.html" class="nav-link "> General </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+
+        <!-- CONFIGURACIONES -->
+        <li class="nav-item  ">
+            <a href="javascript:;" class="nav-link nav-toggle">
+                <i class="icon-settings"></i>
+                <span class="title">Configuraciones</span>
+                <span class="arrow"></span>
+            </a>
+        </li>
+
     </ul>
     <!-- END SIDEBAR MENU -->
 </div>

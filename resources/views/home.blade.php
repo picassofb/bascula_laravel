@@ -1,29 +1,89 @@
 @extends('layouts.master')
 
 @section('contenido')
-<p>
 
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
-sed diam nonummy nibh euismod tincidunt ut laoreet dolore
-magna aliquam erat volutpat. Ut wisi enim ad minim veniam,
-quis nostrud exerci tation ullamcorper suscipit lobortis nisl
-ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
-dolor in hendrerit in vulputate velit esse molestie consequat,
-vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum
-zzril delenit augue duis dolore te feugait nulla facilisi.
-Nam liber tempor cum soluta nobis eleifend option congue
-nihil imperdiet doming id quod mazim placerat facer possim
-assum. Typi non habent claritatem insitam; est usus legentis
-in iis qui facit eorum claritatem. Investigationes
-demonstraverunt lectores legere me lius quod ii legunt saepius.
-Claritas est etiam processus dynamicus, qui sequitur mutationem
-consuetudium lectorum. Mirum est notare quam littera gothica,
-quam nunc putamus parum claram, anteposuerit litterarum formas
-humanitatis per seacula quarta decima et quinta decima. Eodem
-modo typi, qui nunc nobis videntur parum clari, fiant sollemnes
-in futurum.
-</p>
+    <div class="row widget-row">
+        <div class="col-md-3">
+            <!-- BEGIN WIDGET THUMB -->
+            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                <h4 class="widget-thumb-heading">Ingreso del día</h4>
+                <div class="widget-thumb-wrap">
+                    <i class="widget-thumb-icon bg-green icon-info"></i>
+                    <div class="widget-thumb-body">
+                        <span class="widget-thumb-subtitle">TN</span>
+                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END WIDGET THUMB -->
+        </div>
+        <div class="col-md-3">
+            <!-- BEGIN WIDGET THUMB -->
+            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                <h4 class="widget-thumb-heading">Ingreso de la semana</h4>
+                <div class="widget-thumb-wrap">
+                    <i class="widget-thumb-icon bg-red icon-info"></i>
+                    <div class="widget-thumb-body">
+                        <span class="widget-thumb-subtitle">TN</span>
+                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="1,293">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END WIDGET THUMB -->
+        </div>
+        <div class="col-md-3">
+            <!-- BEGIN WIDGET THUMB -->
+            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                <h4 class="widget-thumb-heading">Ingreso del mes</h4>
+                <div class="widget-thumb-wrap">
+                    <i class="widget-thumb-icon bg-purple icon-info"></i>
+                    <div class="widget-thumb-body">
+                        <span class="widget-thumb-subtitle">TN</span>
+                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="815">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END WIDGET THUMB -->
+        </div>
+        <div class="col-md-3">
+            <!-- BEGIN WIDGET THUMB -->
+            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
+                <h4 class="widget-thumb-heading">Total de ingresos</h4>
+                <div class="widget-thumb-wrap">
+                    <i class="widget-thumb-icon bg-blue icon-info"></i>
+                    <div class="widget-thumb-body">
+                        <span class="widget-thumb-subtitle">TN</span>
+                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="5,071">0</span>
+                    </div>
+                </div>
+            </div>
+            <!-- END WIDGET THUMB -->
+        </div>
+    </div>
+
+
+    <div class="col-md-12 col-sm-12">
+        <!-- BEGIN PORTLET-->
+        <div class="portlet light ">
+            <div class="portlet-title">
+                <div class="caption">
+                    <i class="icon-share font-red-sunglo hide"></i>
+                    <span class="caption-subject font-dark bold uppercase">Ingresos</span>
+                    <span class="caption-helper">estadisticas mensuales...</span>
+                </div>
+            </div>
+
+            <div class="portlet-body">
+                <div id="site_activities_loading">
+                    <img src="{{ URL::to('img/loading.gif')  }}" alt="loading" /> </div>
+                <div id="site_activities_content" class="display-none">
+                    <div id="site_activities" style="height: 228px;"> </div>
+                </div>
+            </div>
+        </div>
+        <!-- END PORTLET-->
+    </div>
+
 @endsection
 
 @section('titulo')
