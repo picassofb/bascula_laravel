@@ -17,7 +17,7 @@
 <!-- END THEME GLOBAL STYLES -->
 <!-- BEGIN THEME LAYOUT STYLES -->
 <link href="{{ URL::to('layout/css/layout.min.css') }}" rel="stylesheet" type="text/css" />
-<link href="{{ URL::to('layout/css/themes/dark.css') }}" rel="stylesheet" type="text/css" id="style_color" />
+<link href="{{ URL::to('layout/css/themes/light.css') }}" rel="stylesheet" type="text/css" id="style_color" />
 <link href="{{ URL::to('layout/css/custom.min.css') }} " rel="stylesheet" type="text/css" />
 <!-- END THEME LAYOUT STYLES -->
 <link rel="shortcut icon" href="{{ URL::to('favicon.ico') }}" /> 
