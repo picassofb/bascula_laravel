@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- URL::forceSchema('https') -->
-{{ URL::forceSchema('https') }}
+{{ URL::forceSchema('http') }}
 
 <html lang="es">
     <head>
@@ -30,18 +30,18 @@
             <div class="page-content-wrapper">
                 <!-- BEGIN CONTENT BODY -->
                 <div class="page-content">
-                    <h3 class="page-title"> Panel
-                        <small>panel & estadisticas</small>
+                    <h3 class="page-title"> @yield('titulo')
+                        <small>@yield('subtitulo')</small>
                     </h3>
                     <div class="page-bar">
                         <ul class="page-breadcrumb">
                             <li>
                                 <i class="icon-home"></i>
-                                <a href="{{ URL::to('/') }}">Inicio</a>
+                                <a href="{{ route('panel') }}">Inicio</a>
                                 <i class="fa fa-angle-right"></i>
                             </li>
                             <li>
-                                <span>Panel</span>
+                                <span>@yield('pagina_actual')</span>
                             </li>
                         </ul>
                     </div>

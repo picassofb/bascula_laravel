@@ -11,6 +11,23 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
+
+
+Route::group(['middleware'=>['web']], function(){
+
+    Route::get('/', function () {
+        return view('home');
+    })->name('panel');
+
+
+    Route::group(['middleware' => 'auth'],function(){
+
+        Route::get('/peso_bruto',function(){
+            return view('actions.ingreso.peso_bruto');
+        })->name('peso_bruto');
+
+    });
+
+
+
 });

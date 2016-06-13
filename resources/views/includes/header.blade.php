@@ -4,8 +4,8 @@
     <div class="page-header-inner ">
         <!-- BEGIN LOGO -->
         <div class="page-logo">
-            <a href="index.html">
-                <img src="{{ URL::to('layout/img/logo-default.png') }}" alt="logo" class="logo-default" /> </a>
+            <a href="http://www.coded.ec" target="new">
+                <img src="{{ URL::to('layout/img/Logo-CodEd-White.png') }}" alt="logo" class="logo-default" width="124" height="30" /> </a>
             <div class="menu-toggler sidebar-toggler">
                 <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
             </div>

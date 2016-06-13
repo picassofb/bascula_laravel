@@ -89,3 +89,11 @@
 @section('titulo')
     Inicio
 @endsection
+
+@section('subtitulo')
+    Panel y estadisticas
+@endsection
+
+@section('pagina_actual')
+    Panel
+@endsection
