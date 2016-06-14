@@ -20,10 +20,10 @@ var Login = function() {
 
             messages: {
                 username: {
-                    required: "Username is required."
+                    required: "El usuario es obligatorio."
                 },
                 password: {
-                    required: "Password is required."
+                    required: "La contraseña es obligatoria."
                 }
             },
 
@@ -90,9 +90,9 @@ var Login = function() {
 
             // init background slide images
             $('.login-bg').backstretch([
-                "pages/img/login/bg1.jpg",
-                "pages/img/login/bg2.jpg",
-                "pages/img/login/bg3.jpg"
+                "pages/img/login/bg1.jpg"
+                //"pages/img/login/bg2.jpg",
+                //"pages/img/login/bg3.jpg"
                 ], {
                   fade: 1000,
                   duration: 8000

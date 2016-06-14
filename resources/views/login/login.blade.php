@@ -54,14 +54,14 @@ License: You must have a valid license purchased only from themeforest(the above
 <div class="user-login-5">
     <div class="row bs-reset">
         <div class="col-md-6 login-container bs-reset">
-            <img class="login-logo login-6" src="{{ URL::to('layout/img/logo-CodEd.png') }}" width="280" height="100" />
+            <img class="login-logo login-6" src="{{ URL::to('layout/img/logo-CodEd.png') }}" width="200" height="50" />
             <div class="login-content">
-                <h1>Metronic Admin Login</h1>
+                <h1>Admin Login</h1>
                 <p> Lorem ipsum dolor sit amet, coectetuer adipiscing elit sed diam nonummy et nibh euismod aliquam erat volutpat. Lorem ipsum dolor sit amet, coectetuer adipiscing. </p>
                 <form action="javascript:;" class="login-form" method="post">
                     <div class="alert alert-danger display-hide">
                         <button class="close" data-close="alert"></button>
-                        <span>Enter any username and password. </span>
+                        <span>Ingrese su usuario y contraseña. </span>
                     </div>
                     <div class="row">
                         <div class="col-xs-6">
@@ -72,27 +72,27 @@ License: You must have a valid license purchased only from themeforest(the above
                     <div class="row">
                         <div class="col-sm-4">
                             <label class="rememberme mt-checkbox mt-checkbox-outline">
-                                <input type="checkbox" name="remember" value="1" /> Remember me
+                                <input type="checkbox" name="remember" value="1" /> Recordarme
                                 <span></span>
                             </label>
                         </div>
                         <div class="col-sm-8 text-right">
                             <div class="forgot-password">
-                                <a href="javascript:;" id="forget-password" class="forget-password">Forgot Password?</a>
+                                <a href="javascript:;" id="forget-password" class="forget-password">¿Olvidó su contraseña?</a>
                             </div>
-                            <button class="btn blue" type="submit">Sign In</button>
+                            <button class="btn blue" type="submit">Ingresar</button>
                         </div>
                     </div>
                 </form>
                 <!-- BEGIN FORGOT PASSWORD FORM -->
                 <form class="forget-form" action="javascript:;" method="post">
-                    <h3>Forgot Password ?</h3>
-                    <p> Enter your e-mail address below to reset your password. </p>
+                    <h3>¿ Olvidó su contraseña ?</h3>
+                    <p> Ingrese su e-mail para resetear su clave. </p>
                     <div class="form-group">
                         <input class="form-control placeholder-no-fix" type="text" autocomplete="off" placeholder="Email" name="email" /> </div>
                     <div class="form-actions">
-                        <button type="button" id="back-btn" class="btn blue btn-outline">Back</button>
-                        <button type="submit" class="btn blue uppercase pull-right">Submit</button>
+                        <button type="button" id="back-btn" class="btn blue btn-outline">Regresar</button>
+                        <button type="submit" class="btn blue uppercase pull-right">Aceptar</button>
                     </div>
                 </form>
                 <!-- END FORGOT PASSWORD FORM -->
