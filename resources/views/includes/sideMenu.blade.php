@@ -29,7 +29,7 @@
             </a>
             <ul class="sub-menu">
                 <li class="nav-item  ">
-                    <a href="{{ route('peso_bruto') }}" class="nav-link ">
+                    <a href="{{ route('PesoBruto') }}" class="nav-link ">
                         <span class="title">Peso Bruto</span>
                     </a>
                 </li>

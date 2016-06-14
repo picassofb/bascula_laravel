@@ -19,14 +19,16 @@ Route::group(['middleware'=>['web']], function(){
         return view('home');
     })->name('panel');
 
+    Route::get('/login', function () {
+        return view('login.login');
+    })->name('login');
 
-    Route::group(['middleware' => 'auth'],function(){
-
-        Route::get('/peso_bruto',function(){
-            return view('actions.ingreso.peso_bruto');
-        })->name('peso_bruto');
-
-    });
+    //Route::group(['middleware' => 'auth'],function(){
+        Route::get('/peso_bruto',[
+            'uses' => 'IngresoController@getPesoBruto',
+            'as' => 'PesoBruto'
+        ]);
+    //});
 
 
 
