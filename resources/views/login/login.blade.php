@@ -58,16 +58,32 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="login-content">
                 <h1>Admin Login</h1>
                 <p> Lorem ipsum dolor sit amet, coectetuer adipiscing elit sed diam nonummy et nibh euismod aliquam erat volutpat. Lorem ipsum dolor sit amet, coectetuer adipiscing. </p>
-                <form action="javascript:;" class="login-form" method="post">
-                    <div class="alert alert-danger display-hide">
-                        <button class="close" data-close="alert"></button>
-                        <span>Ingrese su usuario y contraseña. </span>
-                    </div>
+
+                <!-- LOGIN FORM-->
+                <form action="{{ route('login') }}" class="login-form" method="post">
+                    {{ csrf_field() }}
+
+                    @if(count($errors) > 0) 
+                        <div class="alert alert-danger display-hide">
+                            @foreach($errors->all() as $error)
+                                <button class="close" data-close="alert"></button>
+                                <span>{{ $error }} </span>
+                            @endforeach    
+                        </div>
+                    @endif    
+
+                    @if(Session::has('fail')) 
+                        <div class="alert alert-danger display-hide">
+                                <button class="close" data-close="alert"></button>
+                                <span>{{ Session::has('fail') }} </span>
+                        </div>
+                    @endif    
+
                     <div class="row">
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="Username" name="username" required/> </div>
+                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
                         <div class="col-xs-6">
-                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="Password" name="password" required/> </div>
+                            <input class="form-control form-control-solid placeholder-no-fix form-group" type="password" autocomplete="off" placeholder="Password" name="password" /> </div>
                     </div>
                     <div class="row">
                         <div class="col-sm-4">
@@ -84,6 +100,8 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                     </div>
                 </form>
+
+
                 <!-- BEGIN FORGOT PASSWORD FORM -->
                 <form class="forget-form" action="javascript:;" method="post">
                     <h3>¿ Olvidó su contraseña ?</h3>

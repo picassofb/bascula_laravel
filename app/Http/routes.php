@@ -16,23 +16,33 @@
 Route::group(['middleware'=>['web']], function(){
 
     Route::get('/', function () {
-        return view('home');
+        return view('layouts.master');
     })->name('panel');
 
-    Route::get('/login', function () {
-        return view('login.login');
-    })->name('login');
 
-    //Route::group(['middleware' => 'auth'],function(){
+
+    Route::get('/login', [
+        'uses' => 'UsuarioController@getLogin',
+        'as' => 'login'
+    ]);
+
+    Route::post('/login', [
+        'uses' => 'UsuarioController@postLogin',
+        'as' => 'login'
+    ]);
+
+
+
+    Route::group(['middleware' => 'auth'],function(){
+
         Route::get('/peso_bruto',[
             'uses' => 'IngresoController@getPesoBruto',
             'as' => 'PesoBruto'
         ]);
-    //});
 
-
+    });
 
 });
-Route::auth();
 
-Route::get('/home', 'HomeController@index');
+//Route::auth();
+//Route::get('/home', 'HomeController@index');
