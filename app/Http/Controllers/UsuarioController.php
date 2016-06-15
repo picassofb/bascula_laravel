@@ -11,20 +11,18 @@ class UsuarioController extends  Controller
 		return view('login.login');
 	}
 
-	//public function ge
-
 	public function postLogin(Request $request)
 	{
 		$this->validate($request,[
-			'usuario' => 'required',
-			'contrasena' => 'required'
+			'username' => 'required',
+			'password' => 'required'
 		]);
 
 		if( Auth::attempt([ 'usuario' => $request['username'] , 'contrasena' => $request['password'] ]) )
 		{
-			return redirect()->back()->with(['fail'=>'Error al iniciar sesion']);
+			return redirect()->route('panel');
 		}
 
-		return redirect()->route('home');	
+		return redirect()->back()->with(['fail'=>'Error al iniciar sesion']);
 	}
 }

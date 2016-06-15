@@ -13,9 +13,10 @@ class UsuarioTableSeeder extends Seeder
     public function run()
     {
         $usuario = new Usuario();
-        $usuario->nombre = "Ed";
-        $usuario->usuario = "picassofb";
-        $usuario->contrasena = bcrypt("123456");
+        $usuario->name = "Ed";
+        $usuario->email = "picassofb";
+        $usuario->password = bcrypt("123456");
+        $usuario->perfil = "1";
         $usuario->save();
     }
 }

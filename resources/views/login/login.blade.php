@@ -67,7 +67,7 @@ License: You must have a valid license purchased only from themeforest(the above
                         <div class="alert alert-danger display-hide">
                             @foreach($errors->all() as $error)
                                 <button class="close" data-close="alert"></button>
-                                <span>{{ $error }} </span>
+                                <span> {{ $error }} </span>
                             @endforeach    
                         </div>
                     @endif    

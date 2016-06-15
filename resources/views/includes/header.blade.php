@@ -25,9 +25,9 @@
                     <!-- BEGIN USER LOGIN DROPDOWN -->
                     <!-- DOC: Apply "dropdown-dark" class after below "dropdown-extended" to change the dropdown styte -->
                     <li class="dropdown dropdown-user">
-                        <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                        <a href="{{ url('/logout') }}" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                             <img alt="" class="img-circle" src="{{URL::to('layout/img/avatar3_small.jpg')}}" />
-                            <span class="username username-hide-on-mobile"> Ed </span>
+                            <span class="username username-hide-on-mobile"> Edd </span>
                             <i class="fa fa-angle-down"></i>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-default">
@@ -41,7 +41,7 @@
                                     <i class="icon-lock"></i> Bloquear pantalla </a>
                             </li>
                             <li>
-                                <a href="page_user_login_1.html">
+                                <a href="{{ url('/logout') }}">
                                     <i class="icon-key"></i> Cerrar sesión </a>
                             </li>
                         </ul>
