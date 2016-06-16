@@ -21,6 +21,10 @@ Route::group(['middleware'=>['web']], function(){
             return view('layouts.master');
         })->name('panel');
 
+        Route::get('/panel', function () {
+            return view('layouts.master');
+        })->name('panel');
+
 
         Route::get('/peso_bruto',[
             'uses' => 'IngresoController@getPesoBruto',

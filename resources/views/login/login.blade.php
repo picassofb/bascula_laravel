@@ -62,23 +62,7 @@ License: You must have a valid license purchased only from themeforest(the above
                 <!-- LOGIN FORM-->
                 <form action="{{ route('login') }}" class="login-form" method="post">
                     {{ csrf_field() }}
-
-                    @if(count($errors) > 0) 
-                        <div class="alert alert-danger display-hide">
-                            @foreach($errors->all() as $error)
-                                <button class="close" data-close="alert"></button>
-                                <span> {{ $error }} </span>
-                            @endforeach    
-                        </div>
-                    @endif    
-
-                    @if(Session::has('fail')) 
-                        <div class="alert alert-danger display-hide">
-                                <button class="close" data-close="alert"></button>
-                                <span>{{ Session::has('fail') }} </span>
-                        </div>
-                    @endif    
-
+ 
                     <div class="row">
                         <div class="col-xs-6">
                             <input class="form-control form-control-solid placeholder-no-fix form-group" type="text" autocomplete="off" placeholder="Username" name="username" /> </div>
